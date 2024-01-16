@@ -8,6 +8,9 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('user.index');
+        return view('user.index')->with([
+            'test_1' => 'Hello',
+            'test_2' => 'World!',
+        ]);
     }
 }

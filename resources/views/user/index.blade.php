@@ -7,5 +7,8 @@
 </head>
 <body>
   <h1>user.index</h1>
+  <p>
+    {{$test_1}}, {{$test_2}}
+  </p>
 </body>
 </html>
