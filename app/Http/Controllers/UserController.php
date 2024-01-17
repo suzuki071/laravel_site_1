@@ -13,4 +13,12 @@ class UserController extends Controller
             'test_2' => 'World!',
         ]);
     }
+
+    public function confirm()
+    {
+        return view('user.confirm')->with([
+            'test_1' => 'Hello',
+            'test_2' => 'World!',
+        ]);
+    }
 }

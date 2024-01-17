@@ -6,12 +6,12 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>user.index</h1>
+  <h1>user.confirm</h1>
   <p>
     {{$test_1}}, {{$test_2}}
   </p>
   <div>
-    <a href="/user/confirm">go to confirm</a>
+    <a href="/user">go to index</a>
   </div>
 </body>
 </html>

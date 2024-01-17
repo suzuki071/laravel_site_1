@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/user',[UserController::class, 'index']);
+Route::get('/user/confirm',[UserController::class, 'confirm']);
