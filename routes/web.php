@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('hello/{id?}', [HelloController::class, 'index']); //ルートパラメータ
+Route::get('hello2', [HelloController::class, 'index2']);
 
 Route::get('/user',[UserController::class, 'index']);
 Route::get('/user/confirm',[UserController::class, 'confirm']);
