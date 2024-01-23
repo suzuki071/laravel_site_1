@@ -29,6 +29,16 @@ class HelloController extends Controller
         return view('hello.index2', $date);
     }
 
+    /**
+     * bladeテンプレート
+     */
+    public function index3() {
+        $date = [
+            'msg' => 'これはBladeを利用したサンプルです。',
+        ];
+        return view('hello.index3', $date);
+    }
+
     public function test(Request $request, Response $response) {
         $html = <<<EOF
 <html>
