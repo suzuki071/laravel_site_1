@@ -22,6 +22,7 @@ Route::get('/', function () {
 Route::get('hello/{id?}', [HelloController::class, 'index']); //ルートパラメータ
 Route::get('hello2', [HelloController::class, 'index2']);
 Route::get('hello3', [HelloController::class, 'index3']);
+Route::post('hello3', [HelloController::class, 'post3']);
 
 Route::get('/user',[UserController::class, 'index']);
 Route::get('/user/confirm',[UserController::class, 'confirm']);

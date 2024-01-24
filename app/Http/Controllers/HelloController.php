@@ -34,7 +34,15 @@ class HelloController extends Controller
      */
     public function index3() {
         $date = [
-            'msg' => 'これはBladeを利用したサンプルです。',
+            'msg' => '名前を入力してください',
+        ];
+        return view('hello.index3', $date);
+    }
+
+    public function post3(Request $request) {
+        $msg = $request->msg;
+        $date = [
+            'msg' => 'こんにちは、' . $msg . 'さん！',
         ];
         return view('hello.index3', $date);
     }

@@ -17,5 +17,10 @@
   <body>
     <h1>Blade/Index</h1>
     <p>{{$msg}}</p>
+    <form method="post" action="/hello3">
+      @csrf
+      <input type="text" name="msg">
+      <input type="submit">
+    </form>
   </body>
 </html>
