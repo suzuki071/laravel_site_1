@@ -17,6 +17,7 @@
   <body>
     <h1>Blade/Index</h1>
     <p>{{$msg}}</p>
+    <p>{!! $escape !!}</p>
     <form method="post" action="/hello3">
       @csrf
       <input type="text" name="msg">

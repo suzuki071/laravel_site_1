@@ -35,6 +35,7 @@ class HelloController extends Controller
     public function index3() {
         $date = [
             'msg' => '名前を入力してください',
+            'escape' => '<a href="/user">エスケープ処理あり</a>',
         ];
         return view('hello.index3', $date);
     }
