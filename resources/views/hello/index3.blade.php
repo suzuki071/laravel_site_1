@@ -23,5 +23,13 @@
       <input type="text" name="msg">
       <input type="submit">
     </form>
+
+    @if ($value == 2)
+     <p>おはようございます</p>
+    @elseif ($value == 1)
+     <p>こんにちは</p>
+    @else
+      <p>こんばんは</p>
+    @endif
   </body>
 </html>
