@@ -24,6 +24,7 @@
       <input type="submit">
     </form>
 
+    <!-- ifディレクティブ -->
     @if ($value == 2)
      <p>おはようございます</p>
     @elseif ($value == 1)
@@ -31,5 +32,11 @@
     @else
       <p>こんばんは</p>
     @endif
+
+    <!-- unlessディレクティブ -->
+    @unless ($value == 2)
+      <p>2ではない</p>
+    @endunless
+
   </body>
 </html>
