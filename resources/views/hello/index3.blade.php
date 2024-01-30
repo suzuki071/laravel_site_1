@@ -38,5 +38,13 @@
       <p>2ではない</p>
     @endunless
 
+    @empty ($value)
+      <p>valueは空ではないです</p>
+    @endempty
+
+    @isset($value)
+      <p>valueはnullではないです</p>
+    @endisset
+
   </body>
 </html>
