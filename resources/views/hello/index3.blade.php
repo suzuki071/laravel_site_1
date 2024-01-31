@@ -38,13 +38,20 @@
       <p>2ではない</p>
     @endunless
 
+    <!-- emptyディレクティブ -->
     @empty ($value)
       <p>valueは空ではないです</p>
     @endempty
 
+    <!-- issetディレクティブ -->
     @isset($value)
       <p>valueはnullではないです</p>
     @endisset
+
+    <!-- foreachディレクティブ -->
+    @foreach($ary as $data_array)
+      <p>$data_array</p>
+    @endforeach
 
   </body>
 </html>
