@@ -33,10 +33,13 @@ class HelloController extends Controller
      * bladeテンプレート
      */
     public function index3() {
+        $data_ary = ['いちご', 'ぶどう', 'みかん', 'りんご', 'メロン'];
+
         $date = [
             'msg' => '名前を入力してください',
             'escape' => '<a href="/user">エスケープ処理あり</a>',
             'value' => 1,
+            'ary' => $data_ary,
         ];
         return view('hello.index3', $date);
     }
