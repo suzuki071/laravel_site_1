@@ -53,5 +53,17 @@
       <p>$data_array</p>
     @endforeach
 
+    <!-- break continue -->
+    <p>break continue</p>
+    @for ($i = 1; $i < 100; $i++)
+      @if ($i % 2 == 1)
+        @continue
+      @elseif ($i <= 10)
+        <p>No, {{$i}}</p>
+      @else
+        @break
+      @endif
+    @endfor
+
   </body>
 </html>
