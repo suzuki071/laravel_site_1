@@ -34,12 +34,14 @@ class HelloController extends Controller
      */
     public function index3() {
         $data_ary = ['いちご', 'ぶどう', 'みかん', 'りんご', 'メロン'];
+        $mouth = ['one', 'two', 'three', 'four', 'five'];
 
         $date = [
             'msg' => '名前を入力してください',
             'escape' => '<a href="/user">エスケープ処理あり</a>',
             'value' => 1,
             'ary' => $data_ary,
+            'mouth' => $mouth,
         ];
         return view('hello.index3', $date);
     }

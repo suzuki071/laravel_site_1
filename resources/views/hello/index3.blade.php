@@ -65,5 +65,17 @@
       @endif
     @endfor
 
+    <!-- ループ変数 -->
+    <p>ループ変数</p>
+    @foreach ($mouth as $mouth)
+      @if ($loop->first)
+        <p>データ一覧 要素数 : {{ $loop->count }}</p>
+      @endif
+      <p>NO,{{ $loop->iteration }}. {{ $mouth }}</p>
+      @if ($loop->last)
+        <p>--ここまで</p>
+      @endif
+    @endforeach
+
   </body>
 </html>
