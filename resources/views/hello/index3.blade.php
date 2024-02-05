@@ -77,5 +77,12 @@
       @endif
     @endforeach
 
+    <!-- phpディレクティブ -->
+    @php
+      $count = 0;
+    @endphp
+
+    <p>{{ $count }}</p>
+
   </body>
 </html>
