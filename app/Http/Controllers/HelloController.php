@@ -54,6 +54,13 @@ class HelloController extends Controller
         return view('hello.index3', $date);
     }
 
+    /**
+     * bladeテンプレート
+     */
+    public function index4() {
+        return view('hello.index4');
+    }
+
     public function test(Request $request, Response $response) {
         $html = <<<EOF
 <html>

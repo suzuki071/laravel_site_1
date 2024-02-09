@@ -39,18 +39,22 @@
     </style>
   </head>
   <body>
-    <h1>@yield('title')</h1>
-    @section('menuber')
-    <h2 class="menutitle">※メニュー</h2>
-    <ul>
-      <li>@show</li>
-    </ul>
-    <hr size="1">
-    <div class="content">
-      @yield('content')
-    </div>
-    <div class="footer">
-      @yield('footer')
-    </div>
+    @extends('layouts.hellopapp')
+
+    @section('title', 'Index')
+
+    @section('menubar')
+      @parent
+      インデックスページ
+    @endsection
+
+    @section('content')
+      <p>ここが本文のコンテンツです</p>
+      <p>ここに記述できます。www</p>
+    @endcontent
+
+    @section('footer')
+      copyright 2020 suzukid
+    @endsection
   </body>
 </html>
