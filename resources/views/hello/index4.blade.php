@@ -51,7 +51,17 @@
     @section('content')
       <p>ここが本文のコンテンツです</p>
       <p>ここに記述できます。www</p>
-    @endcontent
+
+      @content('components.message')
+        @slot('msg_title')
+        CAUTION!
+        @endslot
+
+        @solt('msg_content')
+        これはメッセージの表示です
+        @endslot
+      @endcontent
+    @endsection
 
     @section('footer')
       copyright 2020 suzukid
