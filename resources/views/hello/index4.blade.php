@@ -63,6 +63,11 @@
       @endcontent
     @endsection
 
+    @include('components.message', [
+      'msg_title' => 'OK',
+      'msg_content' => 'サブメニューです。'
+      ])
+
     @section('footer')
       copyright 2020 suzukid
     @endsection
