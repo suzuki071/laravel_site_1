@@ -51,6 +51,9 @@
     @section('content')
       <p>ここが本文のコンテンツです</p>
       <p>ここに記述できます。www</p>
+      <ul>
+        @each('components.item', $data, 'item')
+      </ul>
 
       @content('components.message')
         @slot('msg_title')
@@ -64,9 +67,9 @@
     @endsection
 
     @include('components.message', [
-      'msg_title' => 'OK',
+      'msg_title'   => 'OK',
       'msg_content' => 'サブメニューです。'
-      ])
+    ])
 
     @section('footer')
       copyright 2020 suzukid
