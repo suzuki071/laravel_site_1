@@ -58,7 +58,12 @@ class HelloController extends Controller
      * bladeテンプレート
      */
     public function index4() {
-        return view('hello.index4');
+        $data = [
+            ['name' => '山田たろう', 'mail' => 'taro@yamada'],
+            ['name' => '鈴木いちろう', 'mail' => 'ichiro@suzuki'],
+            ['name' => '田中まさひろ', 'mail' => 'masahiro@tanaka']
+        ];
+        return view('hello.index4', $data);
     }
 
     public function test(Request $request, Response $response) {
