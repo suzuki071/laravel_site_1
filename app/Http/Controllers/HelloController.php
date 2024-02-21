@@ -74,6 +74,10 @@ class HelloController extends Controller
             [
                 'name' => '田中まさひろ',
                 'mail' => 'masahiro@tanaka'
+            ],
+            [
+                'name' => '中井まさひろ',
+                'mail' => 'masahiro@nakai'
             ]
         ];
         return view('hello.index4', $data);
