@@ -80,6 +80,10 @@ class HelloController extends Controller
                 'mail' => 'masahiro@nakai'
             ],
             [
+                'name' => '中井まさひろ',
+                'mail' => 'masahiro@nakai'
+            ],
+            [
                 'name' => '高橋たろう',
                 'mail' => 'taro@takahashi'
             ]
